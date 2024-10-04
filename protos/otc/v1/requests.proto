@@ -9,7 +9,7 @@ import "google/protobuf/timestamp.proto";
 
 
 message OtcOrderRequest {
-  string client_order_id = 1;
+  optional string client_order_id = 1;
   string account_id = 2;
   OtcTradableSymbol symbol = 5;
   Decimal quantity = 11;
