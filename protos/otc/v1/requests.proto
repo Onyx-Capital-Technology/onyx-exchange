@@ -8,7 +8,7 @@ import "otc/v1/types.proto";
 import "google/protobuf/timestamp.proto";
 
 
-message OtcOrder {
+message OtcOrderRequest {
   string client_order_id = 1;
   string account_id = 2;
   OtcTradableSymbol symbol = 5;
@@ -42,6 +42,6 @@ message OtcRequest {
     Auth auth = 10;
     Subscribe subscribe = 11;
     Unsubscribe unsubscribe = 12;
-    OtcOrder order = 13;
+    OtcOrderRequest order = 13;
   }
 }

@@ -9,7 +9,7 @@ import "google/protobuf/timestamp.proto";
 
 
 
-message Order {
+message OtcOrder {
   string order_id = 1;
   string client_order_id = 2;
   string account_id = 3;
@@ -45,7 +45,7 @@ message OtcResponse {
   string id = 1;
   google.protobuf.Timestamp timestamp = 2;
   oneof response {
-    Order order = 11;
+    OtcOrder order = 11;
     Subscription subscription = 12;
   }
   optional OtcError error = 3;
