@@ -17,7 +17,7 @@ from otc.v1 import types_pb2 as otc_dot_v1_dot_types__pb2
 from google.protobuf import timestamp_pb2 as google_dot_protobuf_dot_timestamp__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x15otc/v1/requests.proto\x12\x06otc.v1\x1a\x13otc/v1/common.proto\x1a\x12otc/v1/types.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"\x86\x04\n\x08NewOrder\x12\x17\n\x0f\x63lient_order_id\x18\x01 \x01(\t\x12\x12\n\naccount_id\x18\x02 \x01(\t\x12\x0e\n\x06symbol\x18\x05 \x01(\t\x12!\n\x08quantity\x18\x0b \x01(\x0b\x32\x0f.otc.v1.Decimal\x12\x1a\n\x04side\x18\x0c \x01(\x0e\x32\x0c.otc.v1.Side\x12%\n\norder_type\x18\r \x01(\x0e\x32\x11.otc.v1.OrderType\x12#\n\x05price\x18\x0f \x01(\x0b\x32\x0f.otc.v1.DecimalH\x00\x88\x01\x01\x12(\n\nstop_price\x18\x15 \x01(\x0b\x32\x0f.otc.v1.DecimalH\x01\x88\x01\x01\x12.\n\x10\x64isplay_quantity\x18\x16 \x01(\x0b\x32\x0f.otc.v1.DecimalH\x02\x88\x01\x01\x12\x34\n\rtime_in_force\x18\x17 \x01(\x0e\x32\x18.otc.v1.OrderTimeInForceH\x03\x88\x01\x01\x12\x33\n\nexpiration\x18\x18 \x01(\x0b\x32\x1a.google.protobuf.TimestampH\x04\x88\x01\x01\x12\x13\n\x06manual\x18\x19 \x01(\x08H\x05\x88\x01\x01\x42\x08\n\x06_priceB\r\n\x0b_stop_priceB\x13\n\x11_display_quantityB\x10\n\x0e_time_in_forceB\r\n\x0b_expirationB\t\n\x07_manual\"\x15\n\x04\x41uth\x12\r\n\x05token\x18\x02 \x01(\t\"=\n\tSubscribe\x12 \n\x07\x63hannel\x18\x01 \x01(\x0e\x32\x0f.otc.v1.Channel\x12\x0e\n\x06symbol\x18\x02 \x01(\t\"?\n\x0bUnsubscribe\x12 \n\x07\x63hannel\x18\x01 \x01(\x0e\x32\x0f.otc.v1.Channel\x12\x0e\n\x06symbol\x18\x02 \x01(\t\"\xc4\x01\n\nOtcRequest\x12\n\n\x02id\x18\x01 \x01(\t\x12-\n\ttimestamp\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x1c\n\x04\x61uth\x18\n \x01(\x0b\x32\x0c.otc.v1.AuthH\x00\x12&\n\tsubscribe\x18\x0b \x01(\x0b\x32\x11.otc.v1.SubscribeH\x00\x12*\n\x0bunsubscribe\x18\x0c \x01(\x0b\x32\x13.otc.v1.UnsubscribeH\x00\x42\t\n\x07requestB\x0b\xaa\x02\x08Onyx.Otcb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x15otc/v1/requests.proto\x12\x06otc.v1\x1a\x13otc/v1/common.proto\x1a\x12otc/v1/types.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"\xdc\x01\n\x08OtcOrder\x12\x17\n\x0f\x63lient_order_id\x18\x01 \x01(\t\x12\x12\n\naccount_id\x18\x02 \x01(\t\x12\x0e\n\x06symbol\x18\x05 \x01(\t\x12!\n\x08quantity\x18\x0b \x01(\x0b\x32\x0f.otc.v1.Decimal\x12\x1a\n\x04side\x18\x0c \x01(\x0e\x32\x0c.otc.v1.Side\x12%\n\norder_type\x18\r \x01(\x0e\x32\x11.otc.v1.OrderType\x12#\n\x05price\x18\x0f \x01(\x0b\x32\x0f.otc.v1.DecimalH\x00\x88\x01\x01\x42\x08\n\x06_price\"\x15\n\x04\x41uth\x12\r\n\x05token\x18\x02 \x01(\t\"=\n\tSubscribe\x12 \n\x07\x63hannel\x18\x01 \x01(\x0e\x32\x0f.otc.v1.Channel\x12\x0e\n\x06symbol\x18\x02 \x01(\t\"?\n\x0bUnsubscribe\x12 \n\x07\x63hannel\x18\x01 \x01(\x0e\x32\x0f.otc.v1.Channel\x12\x0e\n\x06symbol\x18\x02 \x01(\t\"\xe7\x01\n\nOtcRequest\x12\n\n\x02id\x18\x01 \x01(\t\x12-\n\ttimestamp\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x1c\n\x04\x61uth\x18\n \x01(\x0b\x32\x0c.otc.v1.AuthH\x00\x12&\n\tsubscribe\x18\x0b \x01(\x0b\x32\x11.otc.v1.SubscribeH\x00\x12*\n\x0bunsubscribe\x18\x0c \x01(\x0b\x32\x13.otc.v1.UnsubscribeH\x00\x12!\n\x05order\x18\r \x01(\x0b\x32\x10.otc.v1.OtcOrderH\x00\x42\t\n\x07requestB\x0b\xaa\x02\x08Onyx.Otcb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -25,14 +25,14 @@ _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'otc.v1.requests_pb2', _glob
 if not _descriptor._USE_C_DESCRIPTORS:
   _globals['DESCRIPTOR']._loaded_options = None
   _globals['DESCRIPTOR']._serialized_options = b'\252\002\010Onyx.Otc'
-  _globals['_NEWORDER']._serialized_start=108
-  _globals['_NEWORDER']._serialized_end=626
-  _globals['_AUTH']._serialized_start=628
-  _globals['_AUTH']._serialized_end=649
-  _globals['_SUBSCRIBE']._serialized_start=651
-  _globals['_SUBSCRIBE']._serialized_end=712
-  _globals['_UNSUBSCRIBE']._serialized_start=714
-  _globals['_UNSUBSCRIBE']._serialized_end=777
-  _globals['_OTCREQUEST']._serialized_start=780
-  _globals['_OTCREQUEST']._serialized_end=976
+  _globals['_OTCORDER']._serialized_start=108
+  _globals['_OTCORDER']._serialized_end=328
+  _globals['_AUTH']._serialized_start=330
+  _globals['_AUTH']._serialized_end=351
+  _globals['_SUBSCRIBE']._serialized_start=353
+  _globals['_SUBSCRIBE']._serialized_end=414
+  _globals['_UNSUBSCRIBE']._serialized_start=416
+  _globals['_UNSUBSCRIBE']._serialized_end=479
+  _globals['_OTCREQUEST']._serialized_start=482
+  _globals['_OTCREQUEST']._serialized_end=713
 # @@protoc_insertion_point(module_scope)
