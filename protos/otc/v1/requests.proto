@@ -11,7 +11,7 @@ import "google/protobuf/timestamp.proto";
 message OtcOrder {
   string client_order_id = 1;
   string account_id = 2;
-  string symbol = 5;
+  OtcTradableSymbol symbol = 5;
   Decimal quantity = 11;
   OtcSide side = 12;
   OtcOrderType order_type = 13;
